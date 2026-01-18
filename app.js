@@ -36,11 +36,26 @@
 //     i++;
 // }
 // console.log(sum)
-let n = 2;
-let i = 1;
-let sum = 0;
-while(i <= n ){
-    sum = sum - 1 + Math.sin(i) / 2**i;
-    i++;
-}
-console.log(sum)
+
+
+// let n = 2;
+// let i = 1;
+// let sum = 0;
+// while(i <= n ){
+//     sum = sum - 1 + Math.sin(i) / 2**i;
+//     i++;
+// }
+// console.log(sum)
+
+let x = -13.07; 
+let y = 6.16;   
+
+if (x < 0 && y < 0) {
+    x = Math.abs(x);
+    y = Math.abs(y);
+} else if ((x < 0 && y >= 0) || (x >= 0 && y < 0)) {
+    x += 0.5;
+    y += 0.5;
+} 
+console.log("x:", x);
+console.log("y:", y);
