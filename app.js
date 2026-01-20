@@ -38,24 +38,54 @@
 // console.log(sum)
 
 
+    // let n = 2;
+    // let i = 1;
+    // let sum = 0;
+    // while(i <= n ){
+    //     sum = sum - 1 + Math.sin(i) / 2**i;
+    //     i++;
+    // }
+    // console.log(sum)
+
+
+
+    
+//  uyga vazifa 1
+// let x = -13.07; 
+// let y = 6.16;   
+
+// if (x < 0 && y < 0) {
+//     x = Math.abs(x);
+//     y = Math.abs(y);
+// } else if ((x < 0 && y >= 0) || (x >= 0 && y < 0)) {
+//     x += 0.5;
+//     y += 0.5;
+// } 
+// console.log("x:", x);
+// console.log("y:", y);
+
+
+
+//  skill 4
+
 // let n = 2;
+// let x = 3; 
 // let i = 1;
 // let sum = 0;
+
 // while(i <= n ){
-//     sum = sum - 1 + Math.sin(i) / 2**i;
+//     const term = ((-1)**(i - 1)) * (1 / (x**(2 * i)));
+//     sum += term;
 //     i++;
 // }
-// console.log(sum)
 
-let x = -13.07; 
-let y = 6.16;   
 
-if (x < 0 && y < 0) {
-    x = Math.abs(x);
-    y = Math.abs(y);
-} else if ((x < 0 && y >= 0) || (x >= 0 && y < 0)) {
-    x += 0.5;
-    y += 0.5;
-} 
-console.log("x:", x);
-console.log("y:", y);
+// skill 5
+let n = 2;
+let x = 3;
+let S = 0.0;
+
+for (let i = 1; i <= n; i++) {
+    S += ((-1)**(i - 1)) * (1 / (x**(2 * i)));
+}
+console.log(S.toFixed(3)); 
